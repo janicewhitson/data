@@ -1,8 +1,8 @@
 title: Janice Whitson
 tagline: "Clarity you can rely on."
 description: "BI/Data Analyst portfolio"
-baseurl: ""
-url: ""
+baseurl: "/data"
+url: "https://janicewhitson.github.io"
 
 markdown: kramdown
 permalink: pretty
