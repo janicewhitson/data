@@ -1,0 +1,208 @@
+/* ===== Colour tokens ===== */
+:root {
+  --color-bg: #E8E6E2;
+  --color-surface: #FAFAF8;
+  --color-text: #1C1C1A;
+  --color-text-muted: color-mix(in srgb, var(--color-text) 65%, white);
+  --color-border: color-mix(in srgb, var(--color-text) 18%, white);
+  --color-accent: #4A6FA5;
+  --color-accent-strong: color-mix(in srgb, var(--color-accent) 80%, black);
+  --color-accent-soft: color-mix(in srgb, var(--color-accent) 22%, white);
+  --color-shadow: rgba(28, 28, 26, 0.2);
+
+  /* Sidebar-specific — light mode: darker accent panel, light text */
+  --sidebar-bg: var(--color-accent-strong);
+  --sidebar-text: #FAFAF8;
+  --sidebar-text-muted: #D8DEE8;
+  --sidebar-border: rgba(250, 250, 248, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1C1C1A;
+    --color-surface: #262624;
+    --color-text: #E8E6E2;
+    --color-text-muted: color-mix(in srgb, var(--color-text) 65%, black);
+    --color-border: color-mix(in srgb, var(--color-text) 18%, black);
+    --color-accent: #6B8CBE;
+    --color-accent-strong: color-mix(in srgb, var(--color-accent) 80%, white);
+    --color-accent-soft: color-mix(in srgb, var(--color-accent) 22%, black);
+    --color-shadow: rgba(0, 0, 0, 0.4);
+
+    /* Sidebar in dark mode: lightened accent panel, dark text on it */
+    --sidebar-bg: var(--color-accent-strong);
+    --sidebar-text: #1C1C1A;
+    --sidebar-text-muted: #2C2C2A;
+    --sidebar-border: rgba(28, 28, 26, 0.3);
+  }
+}
+
+/* ===== Reset / base ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: var(--color-accent); }
+
+/* ===== App shell ===== */
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 190px;
+  flex-shrink: 0;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-brand { margin-bottom: 1.5rem; }
+
+.sidebar-brand .name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.sidebar-brand .tagline {
+  font-size: 0.75rem;
+  color: var(--sidebar-text-muted);
+  margin: 2px 0 0;
+}
+
+.sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-actions a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+  background: transparent;
+  border: 1px solid var(--sidebar-border);
+  border-radius: 6px;
+  padding: 0.5rem 0.625rem;
+  color: var(--sidebar-text);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.sidebar-actions a:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.sidebar-nav a {
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--sidebar-text-muted);
+  text-decoration: none;
+  padding: 0.375rem 0.25rem;
+  font-size: 0.875rem;
+}
+
+.sidebar-nav a.active {
+  color: var(--sidebar-text);
+  font-weight: 600;
+  border-bottom-color: var(--sidebar-text);
+}
+
+.sidebar-nav a:hover {
+  color: var(--sidebar-text);
+}
+
+/* ===== Content ===== */
+.content {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  max-width: 900px;
+}
+
+.content h1 {
+  margin: 0 0 1.25rem;
+  font-weight: 600;
+}
+
+/* ===== Mobile hamburger trigger ===== */
+.mobile-topbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 0.75rem 1rem;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  color: var(--sidebar-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+/* ===== Breakpoint: 768px ===== */
+@media (max-width: 768px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .mobile-topbar {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    width: 220px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay.open {
+    display: block;
+  }
+
+  .content {
+    padding: 1.5rem;
+    max-width: none;
+  }
+}
