@@ -13,7 +13,6 @@
   /* Sidebar-specific — light mode: darker accent panel, light text */
   --sidebar-bg: var(--color-accent-strong);
   --sidebar-text: #FAFAF8;
-  --sidebar-text-muted: #D8DEE8;
   --sidebar-border: rgba(250, 250, 248, 0.3);
 }
 
@@ -31,9 +30,9 @@
 
     /* Sidebar in dark mode: lightened accent panel, dark text on it */
     --sidebar-bg: var(--color-accent-strong);
-    --sidebar-text: #1C1C1A;
-    --sidebar-text-muted: #2C2C2A;
-    --sidebar-border: rgba(28, 28, 26, 0.3);
+    --sidebar-text: #14141A;
+    --sidebar-text-muted: #14141A;
+    --sidebar-border: rgba(20, 20, 26, 0.35);
   }
 }
 
@@ -117,20 +116,21 @@ a { color: var(--color-accent); }
   border: none;
   border-bottom: 2px solid transparent;
   background: transparent;
-  color: var(--sidebar-text-muted);
+  color: var(--sidebar-text);
+  opacity: 0.65;
   text-decoration: none;
   padding: 0.375rem 0.25rem;
   font-size: 0.875rem;
 }
 
 .sidebar-nav a.active {
-  color: var(--sidebar-text);
+  opacity: 1;
   font-weight: 600;
   border-bottom-color: var(--sidebar-text);
 }
 
 .sidebar-nav a:hover {
-  color: var(--sidebar-text);
+  opacity: 1;
 }
 
 /* ===== Content ===== */
@@ -205,4 +205,5 @@ a { color: var(--color-accent); }
     padding: 1.5rem;
     max-width: none;
   }
+}
 }
