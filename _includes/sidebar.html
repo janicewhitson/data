@@ -1,0 +1,26 @@
+<div class="sidebar-brand">
+  <p class="name">Janice Whitson</p>
+  <p class="tagline">{{ site.tagline }}</p>
+</div>
+
+<div class="sidebar-actions">
+  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HERE" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+    LinkedIn
+  </a>
+  <a href="/contact/">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z" stroke="none"/><path d="M2 6l10 7L22 6M2 6v12h20V6"/></svg>
+    Contact
+  </a>
+  <a href="/assets/resume.pdf" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+    Resumé
+  </a>
+</div>
+
+<nav class="sidebar-nav">
+  <a href="/about/" class="{% if page.url == '/about/' or page.url == '/' %}active{% endif %}">About</a>
+  <a href="/tools/" class="{% if page.url == '/tools/' %}active{% endif %}">Tools</a>
+  <a href="/projects/" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
+  <a href="/licenses/" class="{% if page.url == '/licenses/' %}active{% endif %}">Licenses</a>
+</nav>
