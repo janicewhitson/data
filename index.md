@@ -1,5 +1,5 @@
 ---
-title: About me
+title: Janice Whitson - Data Analyst
 permalink: /
 ---
 
