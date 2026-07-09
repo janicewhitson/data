@@ -1,14 +1,6 @@
-title: Janice Whitson
-tagline: "Clarity you can rely on."
-description: "BI/Data Analyst portfolio"
-baseurl: "/data"
-url: "https://janicewhitson.github.io"
+---
+title: About me
+permalink: /
+---
 
-markdown: kramdown
-permalink: pretty
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+<meta http-equiv="refresh" content="0; url={{ 'data/about.md' | relative_url }}">
