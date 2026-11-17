@@ -7,7 +7,7 @@ permalink: /projects/
 
 <section class="portfolio-projects" aria-label="Featured project">
   <h2>Featured project</h2>
-  <a class="portfolio-project portfolio-project-featured" href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/">
+  <a class="portfolio-project portfolio-project-featured" href="{{ '/projects/sales-support-productivity/' | relative_url }}">
     <img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20AE.png" alt="Sales and Support Productivity executive report" loading="lazy">
     <div>
       <h3>Sales and Support Productivity</h3>
