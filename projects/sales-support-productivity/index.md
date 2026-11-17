@@ -3,115 +3,111 @@ title: Sales and Support Productivity
 permalink: /projects/sales-support-productivity/
 ---
 
+*Making operational contributions visible in reporting built around account ownership.*
+
 **Tools:** Power BI · DAX · Power Query · Bookmarks · Figma
 
-This report was built over four years at a software reseller, growing from a single landing page into a 13-page, 244-measure dashboard used by AE managers, COS team leads, and eventually the Finance VP. It wasn't scoped that way from the start — it expanded because people found it useful and kept asking for more.
+## The problem and initiative
 
-The analytical thread running through every page is the COS support model: a structure where Client Operations Specialists create and manage transactions on behalf of Account Executives, with support assignments tracked at the client level. Every standard company report was AE-coded — the COS team had no visibility into their own activity or performance. This report was built to fix that. The AE pages exist too, but as a secondary lens; the primary question the report was designed to answer is how the COS team is performing, who they're supporting, and whether that support is translating into qualified revenue.
+Company reporting attributed sales activity and results to Account Executives (AEs) and their management hierarchy. Client Operations Specialists (COS), who supported those AEs by managing transactions and helping move business through the sales process, had no equivalent visibility into their own contributions.
 
-The technical problems worth talking about are the ones Power BI doesn't solve natively. Qualification status across Hardware and Software lines required a six-state conditional formatting system — Qualified, Nearly Qualified, and Not Qualified, each with and without COS support assigned — encoded as custom icons built in Figma and imported via theme JSON. A MoM/YoY view toggle on the AE detail page predates field parameters and was implemented with bookmarks and styled buttons. Percentage measures on the Account Executives page calculate denominators dynamically based on matrix expansion level, shifting context between the overall team, an individual AE, and their support breakdown without separate measures for each level. Across the report, measure-driven text strings surface contextual information inline — supported AE counts, assigned COS names, qualification summaries — rather than relying on card visuals or static labels.
+I wanted to answer a straightforward question: **How am I doing?** But the existing reporting couldn't tell me.
 
-The report was built to be used by people who didn't build it, and that shaped some decisions that don't show up in screenshots. An About page documents the acronyms, team structures, and page purposes for anyone coming in cold. A hidden dev notes page captures implementation details and design decisions — internal documentation that made handing the report off or returning to it after months away significantly less painful. The original file also included an embedded data dictionary built using Power BI's INFO functions, surfacing table and column metadata directly inside the report without needing an external document.
+I built a Power BI report for my own use. When I began using it in discussions with my manager, she recognised its value for the wider team. She subsequently used it with her manager, and the report's audience expanded from there.
 
-Scope expanded through real stakeholder demand. The Finance VP requested executive summary pages — one for the AE organisation, one for the COS team — giving leadership a single-screen view without needing to navigate the detail pages. A team manager requested the AE Product Mix page to track line of business split at the rep level. Neither was in the original brief. The report stayed coherent despite the additions because the COS support thread runs through every page, including the ones that weren't originally planned.
+As the report grew beyond my individual needs, a more structured way to identify COS-to-AE support relationships became necessary. No such mechanism existed in company reporting, so I created an Excel-based mapping table maintained by the department manager and team leads. This allowed the report to reflect changing support assignments and analyse activity across the wider Client Operations organisation.
 
-For the portfolio version, the report was rebuilt from scratch using synthetic data generated via a custom Python script to eliminate anything sensitive. The rebuild used Power BI's PBIP format rather than PBIX, which allows the underlying TMDL files to be edited directly in a text editor. All 244 measures were migrated via find-and-replace on the TMDL files rather than rebuilt through the UI — an approach that's only possible if you understand what's actually inside the file format, and one that reduced what could have been weeks of rework to a single pass.
+## Growth and business value
 
+Over four years, the report evolved into a 13-page Power BI solution containing 244 measures. Its expansion was driven by stakeholder questions and practical reporting needs rather than a predetermined development plan.
 
-## Screenshots
+Team leads gained visibility into revenue, gross profit, quote and order volumes, and other performance metrics associated with the Account Executives their teams supported. AE managers could examine the same business activity from their own organisational perspective.
+
+The Finance VP requested executive summaries for both the AE and COS organisations, while a team manager requested a product-mix view to examine business activity by line of business.
+
+Throughout that growth, I maintained a consistent analytical foundation so the same business activity could be examined from different organisational perspectives. The report's continued use, expanding audience and stakeholder-driven additions were the clearest evidence of its value.
+
+## Technical decisions
+
+Several requirements called for solutions beyond standard Power BI visuals and calculations:
+
+- **Context-sensitive DAX:** Percentage measures adjusted their denominators based on the expanded level of an AE matrix, moving between team, individual AE and COS support views.
+- **Qualification indicators:** A six-state classification combined qualification status with COS support assignment, using custom icons created in Figma and incorporated through theme JSON.
+- **Interactive comparisons:** A month-over-month/year-over-year toggle used bookmarks and styled buttons, predating Power BI's field parameters.
+- **Contextual reporting:** Measure-driven text displayed assigned COS names, supported AE counts and qualification summaries directly within the report.
+
+I also included an About page explaining business terminology and report navigation, hidden development notes documenting implementation decisions, and an embedded data dictionary using Power BI's INFO functions.
+
+These decisions helped keep a growing report understandable and maintainable for people who hadn't built it.
+
+## Rebuilding the report for this portfolio
+
+To share the work without exposing company information, I rebuilt the report using synthetic data generated with a custom Python script.
+
+The portfolio version uses Power BI's PBIP format, allowing its underlying Tabular Model Definition Language (TMDL) files to be edited directly. I migrated all 244 measures through targeted find-and-replace operations in those files rather than recreating them individually in the Power BI interface.
+
+This preserved the report's analytical structure while replacing the original business data with synthetic records.
+
+## Report screenshots
+
+The screenshots below are grouped by the business questions they help answer. Select an image to open it at full size.
+
+## Leadership overview
+Executive summaries present revenue, gross profit and transaction activity from the AE and COS perspectives.
 
 ### Executive AE
 *Leadership summary page showing revenue, GP, and quote/order volume with COS support breakdown across all metrics.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20AE.png"
-  alt="Executive AE"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20AE.png" target="_blank" rel="noopener noreferrer" aria-label="Open Executive AE screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20AE.png" alt="Executive AE" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### Executive ClientOps
 *Mirror page from the COS team lens, pre-filtered to a single team.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20COS.png"
-  alt="Executive ClientOps"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20COS.png" target="_blank" rel="noopener noreferrer" aria-label="Open Executive ClientOps screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20COS.png" alt="Executive ClientOps" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
+
+## Team and individual performance
+These views make the underlying business metrics accessible to Client Operations teams and managers, with detail by team, specialist and Account Executive.
 
 ### Client Ops Summary
 *At-a-glance team comparison with COS count and full metric breakdown per team. No team filter — the columns are structural.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Summary.png"
-  alt="Client Ops Summary"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Summary.png" target="_blank" rel="noopener noreferrer" aria-label="Open Client Ops Summary screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Summary.png" alt="Client Ops Summary" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### ClientOps Team Summary
 *Team-level detail with field parameter-driven column selection and bookmark-based table toggle.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Summary.png"
-  alt="ClientOps Team Summary"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Summary.png" target="_blank" rel="noopener noreferrer" aria-label="Open ClientOps Team Summary screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Summary.png" alt="ClientOps Team Summary" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### ClientOps Team Detail
 *Full metric matrix with conditional formatting arrows and QoQ/YoY comparisons per COS/AE pairing.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Detail.png"
-  alt="ClientOps Team Detail"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Detail.png" target="_blank" rel="noopener noreferrer" aria-label="Open ClientOps Team Detail screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Detail.png" alt="ClientOps Team Detail" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### AE Team Summary
 *AE-side equivalent of the Client Ops Summary, with COS support percentage visible on every volume metric.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Summary.png"
-  alt="AE Team Summary"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Summary.png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Team Summary screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Summary.png" alt="AE Team Summary" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### Account Executives
 *Expandable matrix with context-sensitive percentage denominators shifting by hierarchy level.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE.png"
-  alt="Account Executives"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE.png" target="_blank" rel="noopener noreferrer" aria-label="Open Account Executives screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE.png" alt="Account Executives" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
+
+## Performance comparisons
+Comparison views help users examine changes over time, including a bookmark-driven toggle between month-over-month and year-over-year perspectives.
 
 ### AE Team Detail — YoY
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Detail%20YoY.png"
-  alt="AE Team Detail YoY"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Detail%20YoY.png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Team Detail YoY screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Detail%20YoY.png" alt="AE Team Detail YoY" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### AE Team Detail — MoM
 *MoM/YoY toggle implemented via bookmarks and styled buttons — no native toggle exists in Power BI.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Detail%20MoM.png"
-  alt="AE Team Detail MoM"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Detail%20MoM.png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Team Detail MoM screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Team%20Detail%20MoM.png" alt="AE Team Detail MoM" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
+
+## Qualification tracking
+Qualification views bring together business thresholds and COS support assignments.
 
 ### AE Sales Qualification Summary
 *DAX-driven qualification classification across Hardware and Software thresholds, with dynamic support assignment indicators.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Summary.png"
-  alt="AE Sales Qualification Summary"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Summary.png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Sales Qualification Summary screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Summary.png" alt="AE Sales Qualification Summary" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### AE Sales 12 Month Rolling — Full View
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details.png"
-  alt="AE Sales 12 Month Rolling Full"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details.png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Sales 12 Month Rolling Full screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details.png" alt="AE Sales 12 Month Rolling Full" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### AE Sales 12 Month Rolling — Single AE
 *Six-state custom icons built in Figma and imported via theme JSON, encoding qualification level and COS assignment status in a single visual element.*
-<img
-  src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details%20(1%20person).png"
-  alt="AE Sales 12 Month Rolling Single AE"
-  style="width: min(100%, 980px); height: auto;"
-/>
+<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details%20(1%20person).png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Sales 12 Month Rolling Single AE screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details%20(1%20person).png" alt="AE Sales 12 Month Rolling Single AE" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 [← Back to Projects]({{ "/projects/" | relative_url }})
