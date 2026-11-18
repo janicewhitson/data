@@ -57,6 +57,7 @@ The screenshots below are grouped by the business questions they help answer. Se
 
 ### Executive ClientOps
 *An executive-level overview of Client Operations performance, bringing revenue, gross profit and transaction activity into a single view of the team's contributions. The screenshot is filtered to a single team for illustration.*
+
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20COS.png" target="_blank" rel="noopener noreferrer" aria-label="Open Executive ClientOps screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20COS.png" alt="Executive ClientOps" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ## Team and individual performance
@@ -64,14 +65,17 @@ From department-wide comparisons to individual COS performance, these views gave
 
 ### Client Ops Summary
 *Department-wide performance by team, including transaction volumes, revenue, gross profit, QoQ/YoY comparisons and per-COS averages.*
+
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Summary.png" target="_blank" rel="noopener noreferrer" aria-label="Open Client Ops Summary screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Summary.png" alt="Client Ops Summary" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### ClientOps Team Summary
 *A snapshot of an individual team's current performance, with field parameter-driven column selection and a bookmark-based table toggle for flexible viewing.*
+
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Summary.png" target="_blank" rel="noopener noreferrer" aria-label="Open ClientOps Team Summary screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Summary.png" alt="ClientOps Team Summary" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### ClientOps Team Detail
 *Individual COS performance by supported Account Executive, with QoQ/YoY comparisons and conditional formatting arrows highlighting changes over time.*
+
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Detail.png" target="_blank" rel="noopener noreferrer" aria-label="Open ClientOps Team Detail screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20COS%20Team%20Detail.png" alt="ClientOps Team Detail" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ## Qualification tracking
@@ -79,14 +83,17 @@ Sales qualification involved multiple business rules, including different thresh
 
 ### AE Sales Qualification Summary
 *A summary of hardware and software qualification results, showing how qualification status intersects with COS support coverage across Account Executives.*
+
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Summary.png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Sales Qualification Summary screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Summary.png" alt="AE Sales Qualification Summary" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### AE Sales 12 Month Rolling — Full View
 *A rolling 12-month view combining qualification indicators, interactive filters and monthly revenue and gross profit by line of business, allowing users to examine the figures behind each qualification status.*
+
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details.png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Sales 12 Month Rolling Full screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details.png" alt="AE Sales 12 Month Rolling Full" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### AE Sales 12 Month Rolling — Single AE
 *A single-AE view showing how qualification results, COS support assignments and rolling 12-month performance come together, with custom indicators distinguishing the different statuses.*
+
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details%20(1%20person).png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Sales 12 Month Rolling Single AE screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details%20(1%20person).png" alt="AE Sales 12 Month Rolling Single AE" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 [← Back to Projects]({{ "/projects/" | relative_url }})
