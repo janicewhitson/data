@@ -17,8 +17,6 @@ But the existing reports couldn't tell me. Company reporting was organised aroun
 
 So I built something that could.
 
-What started as a Power BI report for my own use would eventually grow into something much bigger than I'd originally imagined.
-
 ## From a personal question to a shared resource
 
 I began using the report with my Team Lead. She asked me to expand it to include our whole team, and eventually began using it with our Manager.
