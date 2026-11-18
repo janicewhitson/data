@@ -9,36 +9,37 @@ permalink: /projects/sales-support-productivity/
 
 ## The problem and initiative
 
-Company reporting attributed sales activity and results to Account Executives (AEs) and their management hierarchy. Client Operations Specialists (COS), who supported those AEs by managing transactions and helping move business through the sales process, had no equivalent visibility into their own contributions.
+Client Operations Specialists (COS) were the day-to-day point of contact for clients, handling quotes, orders, renewals, licensing enquiries and other account-related requests on behalf of their assigned Account Executives (AEs).
 
-I wanted to answer a straightforward question: **How am I doing?** But the existing reporting couldn't tell me.
+But company reporting told a different story. Everything was attributed to the Account Executives and their management hierarchy. There was no reporting that allowed COS to see the revenue, gross profit or transaction volumes associated with the accounts they supported.
 
-I built a Power BI report for my own use. When I began using it in discussions with my manager, she recognised its value for the wider team. She subsequently used it with her manager, and the report's audience expanded from there.
+I wanted to answer a fairly simple question: **How am I doing?**
 
-As the report grew beyond my individual needs, a more structured way to identify COS-to-AE support relationships became necessary. No such mechanism existed in company reporting, so I created an Excel-based mapping table maintained by the department manager and team leads. This allowed the report to reflect changing support assignments and analyse activity across the wider Client Operations organisation.
+The existing reports couldn't tell me.
 
-## Growth and business value
+So I built something that could.
 
-Over four years, the report evolved into a 13-page Power BI solution containing 244 measures. Its expansion was driven by stakeholder questions and practical reporting needs rather than a predetermined development plan.
+What started as a Power BI report for my own use would eventually grow into something much bigger than I'd originally imagined.
 
-Team leads gained visibility into revenue, gross profit, quote and order volumes, and other performance metrics associated with the Account Executives their teams supported. AE managers could examine the same business activity from their own organisational perspective.
+## From a personal question to a shared resource
 
-The Finance VP requested executive summaries for both the AE and COS organisations, while a team manager requested a product-mix view to examine business activity by line of business.
+I began using the report with my Team Lead. She asked me to expand it to include our whole team, and eventually began using it with our Manager.
 
-Throughout that growth, I maintained a consistent analytical foundation so the same business activity could be examined from different organisational perspectives. The report's continued use, expanding audience and stakeholder-driven additions were the clearest evidence of its value.
+As its audience grew, I needed a way to connect each COS to the AEs they supported. That relationship didn't exist in company reporting, so I created an Excel-based mapping table, maintained by our Manager and Team Leads as assignments changed.
 
-## Technical decisions
+With that in place, Client Operations could finally see *their* activity and performance metrics.
 
-Several requirements called for solutions beyond standard Power BI visuals and calculations:
+Over the following four years, the report continued to grow in response to requests from different stakeholders, including additional performance views and executive summaries. Each addition answered a question someone actually needed answered.
 
-- **Context-sensitive DAX:** Percentage measures adjusted their denominators based on the expanded level of an AE matrix, moving between team, individual AE and COS support views.
-- **Qualification indicators:** A six-state classification combined qualification status with COS support assignment, using custom icons created in Figma and incorporated through theme JSON.
-- **Interactive comparisons:** A month-over-month/year-over-year toggle used bookmarks and styled buttons, predating Power BI's field parameters.
-- **Contextual reporting:** Measure-driven text displayed assigned COS names, supported AE counts and qualification summaries directly within the report.
+## Making the details work
 
-I also included an About page explaining business terminology and report navigation, hidden development notes documenting implementation decisions, and an embedded data dictionary using Power BI's INFO functions.
+Some of the trickiest parts of the report involved finding ways to present nuanced, multilayered information clearly.
 
-These decisions helped keep a growing report understandable and maintainable for people who hadn't built it.
+The sales qualification indicators were one of those challenges. Users needed to see both qualification and COS support statuses without having to interpret several separate fields. I developed six distinct indicators, designed the icons in Figma and incorporated them into Power BI through a custom theme. Getting the business rules, conditional formatting and visual design to work together took some experimentation, but the result communicated both statuses at a glance.
+
+I also built a month-over-month/year-over-year comparison toggle using bookmarks and styled buttons, before Power BI introduced field parameters. It gave users a straightforward way to switch perspectives without navigating to another page.
+
+Other details were less visible but equally deliberate: dynamic text that provided context within the report, an About page explaining terminology, and development notes to make future changes easier. I also used Power BI's INFO functions to build an embedded data dictionary, making table and column metadata available directly within the report.
 
 ## Rebuilding the report for this portfolio
 
