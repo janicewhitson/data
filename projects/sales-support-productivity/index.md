@@ -54,14 +54,9 @@ This preserved the report's analytical structure while replacing the original bu
 The screenshots below are grouped by the business questions they help answer. Select an image to open it at full size.
 
 ## Leadership overview
-Executive summaries present revenue, gross profit and transaction activity from the AE and COS perspectives.
-
-### Executive AE
-*Leadership summary page showing revenue, GP, and quote/order volume with COS support breakdown across all metrics.*
-<a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20AE.png" target="_blank" rel="noopener noreferrer" aria-label="Open Executive AE screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20AE.png" alt="Executive AE" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ### Executive ClientOps
-*Mirror page from the COS team lens, pre-filtered to a single team.*
+*An executive-level overview of Client Operations performance, bringing revenue, gross profit and transaction activity into a single view of the team's contributions. The screenshot is filtered to a single team for illustration.*
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20COS.png" target="_blank" rel="noopener noreferrer" aria-label="Open Executive ClientOps screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20Exec%20COS.png" alt="Executive ClientOps" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
 ## Team and individual performance
