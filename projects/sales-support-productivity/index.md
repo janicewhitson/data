@@ -45,7 +45,7 @@ Other details were less visible but equally deliberate: dynamic text that provid
 
 To share the work without exposing company information, I rebuilt the report using synthetic data generated with a custom Python script.
 
-The portfolio version uses Power BI's PBIP format, allowing its underlying Tabular Model Definition Language (TMDL) files to be edited directly. I migrated all 244 measures through targeted find-and-replace operations in those files rather than recreating them individually in the Power BI interface.
+The portfolio version uses Power BI's PBIP format, allowing its underlying Tabular Model Definition Language (TMDL) files to be edited directly. I migrated the existing measures through targeted find-and-replace operations in those files rather than recreating them individually in the Power BI interface.
 
 This preserved the report's analytical structure while replacing the original business data with synthetic records.
 
