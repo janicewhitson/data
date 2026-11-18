@@ -9,13 +9,11 @@ permalink: /projects/sales-support-productivity/
 
 ## The problem and initiative
 
-Client Operations Specialists (COS) were the day-to-day point of contact for clients, handling quotes, orders, renewals, licensing enquiries and other account-related requests on behalf of their assigned Account Executives (AEs).
-
-But company reporting told a different story. Everything was attributed to the Account Executives and their management hierarchy. There was no reporting that allowed COS to see the revenue, gross profit or transaction volumes associated with the accounts they supported.
+Client Operations Specialists (COS) were the day-to-day point of contact for clients. On any given day, we would handle quotes, orders, renewals, licensing enquiries and various other account-related requests through hundreds of emails and dozens of calls.
 
 I wanted to answer a fairly simple question: **How am I doing?**
 
-The existing reports couldn't tell me.
+But the existing reports couldn't tell me. Company reporting was organised around Account Executives (AEs), leaving the entire Client Operations department without visibility into its own performance metrics.
 
 So I built something that could.
 
