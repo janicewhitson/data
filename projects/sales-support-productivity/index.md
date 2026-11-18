@@ -19,19 +19,19 @@ So I built something that could.
 
 ## From a personal question to a shared resource
 
-I began using the report with my Team Lead. She asked me to expand it to include our whole team, and eventually began using it with our Manager.
+I began using my report with my Team Lead, who then asked me to build an expanded version for the whole team. She later began using that version with our Manager.
 
-As its audience grew, I needed a way to connect each COS to the AEs they supported. That relationship didn't exist in company reporting, so I created an Excel-based mapping table, maintained by our Manager and Team Leads as assignments changed.
+As its audience grew, I needed a way to connect each COS to the AEs they supported. That relationship wasn't recorded in any company system, so I created an Excel-based mapping table, maintained by our Manager and Team Leads as assignments changed.
 
 With that in place, Client Operations could finally see *their* activity and performance metrics.
 
-Over the following four years, the report continued to grow in response to requests from different stakeholders, including additional performance views and executive summaries. Each addition answered a question someone actually needed answered.
+Over the next four years, the report continued to grow in response to requests from different stakeholders, including additional performance views and executive summaries. Each addition answered a question someone actually needed answered.
 
 ## Making the details work
 
 Some of the trickiest parts of the report involved finding ways to present nuanced, multilayered information clearly.
 
-The sales qualification indicators were one of those challenges. Users needed to see both qualification and COS support statuses without having to interpret several separate fields. I developed six distinct indicators, designed the icons in Figma and incorporated them into Power BI through a custom theme. Getting the business rules, conditional formatting and visual design to work together took some experimentation, but the result communicated both statuses at a glance.
+The sales qualification indicators were one of those challenges. I was asked to create a page showing sales qualification results based on defined business criteria. I chose a traffic-light-style approach, developing six distinct indicators that combined qualification status and COS support status into a single visual element. I designed the icons in Figma and incorporated them into Power BI through a custom theme. Getting the business rules, conditional formatting and visual design to work together took some experimentation, but the result communicated both statuses at a glance.
 
 I also built a month-over-month/year-over-year comparison toggle using bookmarks and styled buttons, before Power BI introduced field parameters. It gave users a straightforward way to switch perspectives without navigating to another page.
 
