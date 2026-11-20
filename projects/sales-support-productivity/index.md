@@ -25,7 +25,7 @@ As its audience grew, I needed a way to connect each COS to the AEs they support
 
 With that in place, Client Operations could finally see *their* activity and performance metrics.
 
-Over the next four years, the report continued to grow in response to requests from different stakeholders, including additional performance views and executive summaries. Each addition answered a question someone actually needed answered.
+Over the next four years, the report continued to grow in response to requests from different stakeholders, including additional performance views and executive summaries.
 
 ## Making the details work
 
