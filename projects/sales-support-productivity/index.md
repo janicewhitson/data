@@ -5,7 +5,7 @@ permalink: /projects/sales-support-productivity/
 
 *Making operational contributions visible in reporting built around account ownership.*
 
-**Tools:** Power BI · DAX · Power Query · Bookmarks · Figma
+<div class="portfolio-tags" aria-label="Tools used"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Bookmarks</span><span>Figma</span></div>
 
 ## The problem and initiative
 
