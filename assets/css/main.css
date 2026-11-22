@@ -206,6 +206,15 @@ a { color: var(--color-accent); }
     max-width: none;
   }
 }
+
+/* Keep desktop navigation visible while long pages scroll. */
+@media (min-width: 769px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
 }
 
 /* ===== Portfolio project cards ===== */
