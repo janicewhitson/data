@@ -20,7 +20,7 @@ permalink: /projects/
 <section class="portfolio-projects" aria-label="Other projects">
   <h2>Other projects</h2>
   <div class="portfolio-project-list">
-    <a class="portfolio-project" href="https://janicewhitson.github.io/voiceofdata/data/case-studies/servicenow-itsm/">
+    <a class="portfolio-project" href="{{ '/projects/servicenow-itsm/' | relative_url }}">
       <img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/servicenow-itsm/SN-ITSM-IncidentOverview.png" alt="ServiceNow incident overview report" loading="lazy">
       <div><h3>ITSM Client Facing Reporting</h3><p>Inherited a ServiceNow reporting project mid-development, rebuilt it around the team's actual client-meeting needs, and delivered a usable first version in under four days.</p><p class="portfolio-tags"><span>Power BI</span><span>ServiceNow</span><span>DAX</span></p></div>
     </a>
