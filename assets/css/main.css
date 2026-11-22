@@ -230,8 +230,8 @@ a { color: var(--color-accent); }
   padding: 0.12rem 0.65rem;
   line-height: 1.5;
 }
-.portfolio-project-featured { grid-template-columns: 1fr; }
-.portfolio-project-featured img { max-height: 340px; }
+.portfolio-project-featured { grid-template-columns: minmax(130px, 34%) 1fr; }
+.portfolio-project-featured img { max-height: 180px; }
 @media (max-width: 600px) {
   .portfolio-project { grid-template-columns: 1fr; }
   .portfolio-project img { max-height: 220px; }
