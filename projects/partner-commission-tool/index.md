@@ -51,4 +51,4 @@ Select an image to open it at full size.
 
 *Product names have been replaced with generic placeholders. No proprietary company or partner data is included.*
 
-[← Back to Projects]({{ "/projects/" | relative_url }})
+<a class="back-to-projects" href="{{ '/projects/' | relative_url }}">← Back to Projects</a>
