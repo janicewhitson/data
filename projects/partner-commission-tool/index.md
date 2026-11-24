@@ -17,7 +17,7 @@ Drawing on my experience with SaaS licensing and pricing structures, I offered t
 
 ## Development and Design
 
-I developed the Excel prototype that same evening, incorporating two distinct scenarios:
+I developed the Excel model that same evening, incorporating two distinct scenarios:
 
 **New and Prospective Partners**
 
@@ -31,11 +31,11 @@ Both scenarios reference a shared structured table containing the tier threshold
 
 Separating the tier and rate definitions from the calculation logic allows the proposed parameters to be adjusted without modifying the underlying formulas.
 
-The Excel model was intended as a prototype rather than a permanent operational tool. I also proposed a dedicated partner portal where existing partners could access their sales history and evaluate additional purchase scenarios, prospective partners could submit enquiries to the sales team, and customers could identify authorised resellers.
+For eventual implementation, I also proposed a dedicated partner portal where existing partners could access their sales history and evaluate additional purchase scenarios, prospective partners could submit enquiries to the sales team, and customers could identify authorised resellers.
 
 ## Outcome
 
-The prototype was used during an internal presentation to management. Feedback indicated that the working model helped management better understand the proposed commission structure.
+The workbook was used during an internal presentation to management. Feedback indicated that the working model helped management better understand the proposed commission structure.
 
 The company ultimately chose not to proceed with the partner program, and the tool remained a working prototype.
 
