@@ -92,4 +92,4 @@ Sales qualification involved multiple business rules, including different thresh
 
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details%20(1%20person).png" target="_blank" rel="noopener noreferrer" aria-label="Open AE Sales 12 Month Rolling Single AE screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/sales-support-productivity/Productivity%20-%20AE%20Support%20Qualify%20Details%20(1%20person).png" alt="AE Sales 12 Month Rolling Single AE" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
-[← Back to Projects]({{ "/projects/" | relative_url }})
+<a class="back-to-projects" href="{{ '/projects/' | relative_url }}">← Back to Projects</a>
