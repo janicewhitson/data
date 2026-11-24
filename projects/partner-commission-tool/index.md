@@ -37,8 +37,6 @@ For eventual implementation, I also proposed a dedicated partner portal where ex
 
 The workbook was used during an internal presentation to management. Feedback indicated that the working model helped management better understand the proposed commission structure.
 
-The company ultimately chose not to proceed with the partner program, and the tool remained a working prototype.
-
 ## Tool Screenshots
 
 Select an image to open it at full size.
