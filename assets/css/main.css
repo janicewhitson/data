@@ -267,3 +267,15 @@ a { color: var(--color-accent); }
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
+
+/* ===== Featured project emphasis ===== */
+.portfolio-projects[aria-label="Featured project"] {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.portfolio-projects[aria-label="Featured project"] h2 {
+  font-size: 1.5rem;
+}
+.portfolio-project-featured {
+  border-left: 5px solid var(--color-accent);
+}
