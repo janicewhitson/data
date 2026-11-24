@@ -245,3 +245,25 @@ a { color: var(--color-accent); }
   .portfolio-project { grid-template-columns: 1fr; }
   .portfolio-project img { max-height: 220px; }
 }
+
+/* ===== Case study navigation ===== */
+.back-to-projects {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  font-weight: 600;
+  text-decoration: none;
+}
+.back-to-projects:hover {
+  background: var(--color-accent);
+  color: var(--sidebar-text);
+}
+.back-to-projects:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
