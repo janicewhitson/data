@@ -36,9 +36,9 @@ permalink: /projects/
       <img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/WinDisk/WinDiskReport.png" alt="Windows disk utilisation report" loading="lazy">
       <div><h3>Windows Disk Utilisation</h3><p>Standardised weekly infrastructure reporting with a repeatable process that combined multiple data sources, reduced preparation effort and improved consistency.</p><p class="portfolio-tags"><span>Excel</span><span>Power Query</span></p></div>
     </a>
-    <a class="portfolio-project" href="https://janicewhitson.github.io/voiceofdata/data/case-studies/PartnerCommTool/">
+    <a class="portfolio-project" href="{{ '/projects/partner-commission-tool/' | relative_url }}">
       <img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/PartnerCommTool/PCTool-Existing.png" alt="Partner commission modelling tool" loading="lazy">
-      <div><h3>Partner Commission Tool</h3><p>Turned a written partner-program proposal into an interactive model so leadership could see what a partner would actually earn.</p><p class="portfolio-tags"><span>Excel</span></p></div>
+      <div><h3>Partner Commission Tool</h3><p>Developed a configurable Excel prototype to help management evaluate a proposed partner commission structure, including new and existing partner scenarios.</p><p class="portfolio-tags"><span>Excel</span></p></div>
     </a>
   </div>
 </section>
