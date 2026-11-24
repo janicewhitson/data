@@ -67,4 +67,4 @@ Select an image to open it at full size.
 
 <a href="https://janicewhitson.github.io/voiceofdata/data/case-studies/servicenow-itsm/SN-ITSM-Change.png" target="_blank" rel="noopener noreferrer" aria-label="Open Change Management screenshot at full size"><img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/servicenow-itsm/SN-ITSM-Change.png" alt="Change Management" loading="lazy" style="display:block; max-width:100%; height:auto;" /></a>
 
-[← Back to Projects]({{ "/projects/" | relative_url }})
+<a class="back-to-projects" href="{{ '/projects/' | relative_url }}">← Back to Projects</a>
