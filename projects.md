@@ -28,9 +28,9 @@ permalink: /projects/
       <img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/renewals-reporting/IntRenewalThumb.png" alt="Internal renewals report" loading="lazy">
       <div><h3>Internal Renewals Reporting</h3><p>Created a renewals view for Operations staff whose needs weren't served by the company portal. Adopted by the team within six weeks and later used in Director meetings.</p><p class="portfolio-tags"><span>Excel</span><span>Power Query</span></p></div>
     </a>
-    <a class="portfolio-project" href="https://janicewhitson.github.io/voiceofdata/data/case-studies/clientrenewaltracking/">
+    <a class="portfolio-project" href="{{ '/projects/client-renewal-tracker/' | relative_url }}">
       <img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/clientrenewaltracking/CLT-2024-Summary.png" alt="Client Renewal Tracker summary" loading="lazy">
-      <div><h3>Client Renewal Tracker</h3><p>Tracked approximately 500 Adobe subscriptions and caught purchase-order discrepancies before submission, while making important client context visible to the account team.</p><p class="portfolio-tags"><span>Excel</span></p></div>
+      <div><h3>Client Renewal Tracker</h3><p>Developed a renewal tracker for approximately 500 Adobe subscriptions, preventing order rejections and establishing the commercial significance of the annual renewal.</p><p class="portfolio-tags"><span>Excel</span></p></div>
     </a>
     <a class="portfolio-project" href="https://janicewhitson.github.io/voiceofdata/data/case-studies/WinDisk/">
       <img src="https://janicewhitson.github.io/voiceofdata/data/case-studies/WinDisk/WinDiskReport.png" alt="Windows disk utilisation report" loading="lazy">
